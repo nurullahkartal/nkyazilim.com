@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="tr"> <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>NKYAZILIM | Premium Muhasebe ve Lojistik Yazılım Çözümleri</title>
+  
+  <meta name="description" content="NKYAZILIM ile operasyonel mükemmelliği keşfedin. Lojistik ve muhasebe süreçlerinizi Python tabanlı butik otomasyon çözümlerimizle dijitalleştiriyoruz.">
+  
+  <meta name="robots" content="index, follow"> <link rel="canonical" href="https://nkyazilim.com/"> <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "NKYAZILIM",
+    "url": "https://nkyazilim.com",
+    "logo": "https://nkyazilim.com/logo.webp",
+    "description": "Muhasebe ve lojistik süreçleri için profesyonel yazılım çözümleri."
+  }
+  </script>
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: radial-gradient(ellipse at bottom, #0d1b2a 0%, #020813 100%);
+      height: 100vh; overflow: hidden; display: flex; align-items: center; justify-content: center; color: #fff;
+    }
+    .particles { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0; }
+    .particle { position: absolute; background: rgba(255, 255, 255, 0.05); border-radius: 50%; animation: float 15s infinite; }
+    @keyframes float {
+      0% { transform: translateY(0) scale(0.5); opacity: 0; }
+      50% { opacity: 0.8; }
+      100% { transform: translateY(-1000px) scale(1.2); opacity: 0; }
+    }
+    .container { position: relative; z-index: 1; text-align: center; padding: 2rem; backdrop-filter: blur(5px); border-radius: 20px; animation: fadeIn 2s ease-out; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+    .badge { display: inline-block; background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); padding: 0.4rem 1.2rem; border-radius: 50px; font-size: 0.8rem; letter-spacing: 3px; text-transform: uppercase; border: 1px solid rgba(255, 255, 255, 0.2); margin-bottom: 2rem; color: #ccc; }
+    h1 { font-size: clamp(3rem, 10vw, 6rem); font-weight: 800; background: linear-gradient(135deg, #f9d423 0%, #fda085 50%, #f093fb 80%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; letter-spacing: 5px; margin-bottom: 0.5rem; } /* [cite: 451, 510] */
+    h2.subtitle { font-size: clamp(1rem, 3vw, 1.5rem); color: #a0b9ce; font-weight: 300; letter-spacing: 4px; margin-bottom: 2rem; text-transform: uppercase; } /* [cite: 453] */
+    .message { font-size: 1.2rem; color: #d0e1f9; margin-bottom: 3rem; font-style: italic; border-left: 2px solid #f9d423; padding-left: 1rem; display: inline-block; text-align: left; }
+    .social-links { display: flex; gap: 1.5rem; justify-content: center; margin-top: 2rem; }
+    .social-icon { width: 45px; height: 45px; border: 1px solid rgba(255,255,255,0.3); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #ccc; text-decoration: none; font-size: 1.2rem; transition: 0.3s; }
+    .social-icon:hover { background: rgba(255,255,255,0.15); border-color: #f9d423; color: #f9d423; box-shadow: 0 0 20px rgba(249,212,35,0.4); transform: translateY(-3px); }
+    .footer-note { margin-top: 4rem; color: #5a6f85; font-size: 0.7rem; letter-spacing: 2px; text-transform: uppercase; }
+  </style>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <div class="particles" id="particles"></div>
+  <div class="container">
+    <div class="badge">• Dijital Stüdyo •</div>
+    <h1>NKYAZILIM</h1>
+    <h2 class="subtitle">Çok Yakında Sizlerleyiz</h2>
+    <div class="message">"Yazılım dünyasında lüks ve hız bir araya geliyor.<br>Bizi beklemeye devam edin."</div>
+    <div class="social-links">
+      <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="#" class="social-icon" aria-label="X-Twitter"><i class="fab fa-x-twitter"></i></a>
+      <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      <a href="#" class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+    </div>
+    <p class="footer-note">&copy; 2026 NKYAZILIM • TÜM HAKLAR SAKLIDIR</p>
+  </div>
+  <script>
+    function createParticle() {
+      const p = document.createElement('div'); p.classList.add('particle');
+      const s = Math.random() * 80 + 20; p.style.width = s+'px'; p.style.height = s+'px';
+      p.style.left = Math.random()*100+'%'; p.style.top = Math.random()*100+'%';
+      p.style.animationDelay = Math.random()*10+'s';
+      document.getElementById('particles').appendChild(p);
+      setTimeout(() => { p.remove(); }, 15000);
+    }
+    setInterval(createParticle, 800);
+    for(let i=0; i<15; i++) { setTimeout(createParticle, i * 200); }
+  </script>
+</body>
+</html>
